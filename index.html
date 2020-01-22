@@ -389,7 +389,7 @@
               <h4 class="modal-title" id="exampleModalLabel">Contact Us</h4>
             </div>
             <div class="modal-body">
-              <form name="myForm" id="myForm" action="https://script.google.com/macros/s/AKfycbyltH6CRjcVzUYDQK3h6w179OiDQEA2zfxGnq763I3CzNz1nlQ/exec">
+              <form name="myForm" id="myForm" action="https://script.google.com/macros/s/AKfycbzGhBo1Pc9hFOeViqFSPOOsBEC2j3XkIg6knD4inMdbvd-tf6E/exec">
 
                     <div class="form-group">
                       <label for="Name">Name</label>
@@ -409,7 +409,7 @@
             </div>
             <div class="modal-footer">
 
-              <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-light" value="reset" data-dismiss="modal"onclick=" myFunction()">Close</button>
         
             </div>
           </div>
@@ -445,6 +445,11 @@ $(document).ready(function(){
         return false;
     });
 });
+</script>
+<script>
+  function myFunction() {
+    document.myForm.reset();
+  }
 </script>
 </body>
 </html>
